@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="header,navigation,content,footer">
+    <meta name="author" content="Abbygail Agati">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <meta http-equip="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+
+    <!--<link href="assets/fontawesome/css/all.css" rel="stylesheet">-->
+
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/duotone.css" integrity="sha384-R3QzTxyukP03CMqKFe0ssp5wUvBPEyy9ZspCB+Y01fEjhMwcXixTyeot+S40+AjZ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/fontawesome.css" integrity="sha384-eHoocPgXsiuZh+Yy6+7DsKAerLXyJmu2Hadh4QYyt+8v86geixVYwFqUvMU8X90l" crossorigin="anonymous" />
+
+    <script src="index.js"></script>
+    <!--load all styles -->
+</head>
+
+<body>
+    <div class="bg-image">
+        <img src="1638663.jpg" class="header-img">
+    </div>
+    <nav class="navbar">
+        <ul class="navigation " id="navigation ">
+            <li class="navigation-list" style="float:left;">
+                <div class="menu" id="menu">
+                    <i onclick="showSidebar()" class="fas fa-bars " style="color:gray;"></i>
+                </div>
+            </li>
+            <li class="navigation-list ">
+                <button type="button" class="btn-login"><strong>Login</strong></button>
+            </li>
+            <li class="navigation-list ">
+                <div class="search-input" id="search-input">
+                    <input type=" text " name="search " id="search" class="search " placeholder=" Search ">
+                    <strong><button type = "button " class = "search-btn" id = "search-btn"><i class="fas fa-search" onclick="search()"></i></button></strong>
+                </div>
+            </li>
+
+        </ul>
+    </nav>
+
+    <ul class="sidebar" id="sidebar">
+        <div class="close">
+            <button type="button " onclick="hide()" class="close-btn"><i class="far fa-times-circle " style="color:white;"></i></button>
+        </div>
+
+        <div class="nav-header">
+            <a href="#">
+                <center><strong>ARTCOLLAB</strong>
+            </a>
+        </div>
+
+        <li class="sidebar-component">
+            <strong>Home</strong>
+        </li>
+        <li class="sidebar-component ">
+            <strong>About</strong>
+        </li>
+        <li class="sidebar-component " id="projects">
+            <strong>Projects</strong>
+            <i class="fas fa-caret-down" id="showProjects" onclick="showProjects()"></i>
+            <i class="fas fa-caret-down" id="hideProjects" onclick="hideProjects()" style="transform:rotate(180deg);display: none;"></i>
+        </li>
+        <ul class="projects-list">
+            <li class="projects" id="project1"><strong>Freehand</strong></li>
+            <li class="projects" id="project2"><strong>Paintings</strong></li>
+            <li class="projects" id="project3"><strong>Digital Art</strong></li>
+        </ul>
+
+        <hr>
+
+        <li class="sidebar-component">
+            <strong>Contacts</strong>
+        </li>
+
+        <hr>
+
+        <li class="">
+            <center><button type="button" class="btn-join"><strong>Join Now</strong></button></center>
+        </li>
+
+    </ul>
+
+    <div class="page-wrapper" id="page-wrapper">
+
+        <div class="title">
+            <div class="greeting"><strong>ART<br>COLLAB</strong></div>
+            <div class="desc">
+                <strong>CREATE & LEARN</strong>
+                <br>
+                <button type="button" class="btn-explore"><strong>EXPLORE</strong></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards" style="background-color:transparent;border:none;z-index:-1;"></div>
+    <div class="cards">
+        <center>
+            <div class="aboutUs">
+                <span class="about"><strong>ABOUT</strong></span>
+                <p class="about-text">We are a group of artists who creates and showcases our talents for a cause.</p>
+            </div>
+
+        </center>
+    </div>
+    <center>
+        <img src="photo-1580124917341-d318cbacc34f.jpg" id="img1" class="photo-card">
+        <img src="a7422a5acc1c43f40d40f7f746f471d3.jpg" class="photo-card">
+        <img src="images.jpg" class="photo-card">
+        </div>
+    </center>
+</body>
+
+<footer>
+    <div class="footer">
+        <center>
+            <div class="footer-title">
+                <span class="footer-text"><strong>ARTCOLLAB</strong></span>
+                <br>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-youtube-square"></i>
+            </div>
+        </center>
+    </div>
+</footer>
+
+</html>
